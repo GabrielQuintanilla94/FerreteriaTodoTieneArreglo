@@ -1,0 +1,356 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E8E8E8; 
+    color: #000000; 
+    padding: 20px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Estilos de la navegación */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #dcdcdc !important;
+}
+
+/* Estilos del carrusel */
+.carousel-item img {
+    height: 500px;
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 500px; /* Debe coincidir con la altura de las imágenes */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos del contenedor principal */
+main.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem; /* Compensa la altura de la barra de navegación fija */
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+/* Estilos para la información de la empresa */
+#info-empresa {
+    text-align: left;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+#info-empresa h2 {
+    margin-bottom: 20px;
+}
+
+#info-empresa p {
+    font-size: 1.1rem;
+}
+
+/* Estilos para la sección de promociones*/
+.promociones {
+    border: 2px solid #007bff; /* Color del borde */
+    padding: 20px; /* Espacio interior */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo sutil */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.promociones h2 {
+    margin-bottom: 20px; /* Espacio inferior para el título */
+}
+
+.promociones .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para las tarjetas */
+    transition: transform 0.2s; /* Transición suave para el hover */
+}
+
+.promociones .card:hover {
+    transform: translateY(-5px); /* Efecto hover para levantar la tarjeta */
+}
+
+/* Estilos para la sección de productos destacados */
+#productos-destacados {
+    /*padding: 50px 0;*/
+    text-align: center;
+}
+
+#productos-destacados h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos de las tarjetas */
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    /*box-sizing: border-box;*/
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Estilos para la sección de Historia */
+.historia {
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.historia img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.historia-text {
+    max-width: 60%;
+        }
+
+/* Estilos para la sección de creadores */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-creador {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #343A40;
+    color: #FFFFFF;
+}
+
+.card-creador img {
+    width: 100%;
+    height: auto;
+}
+
+.card-creador-body {
+    padding: 15px;
+}
+
+.card-creador-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-creador-text {
+    font-size: 1rem;
+}
+
+/* Estilos para el formulario de contacto */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+}
+
+.contacto .form-group {
+    width: 750px;
+    max-width: 1250px; /* Aumentar el ancho del formulario */
+}
+
+.contacto .form-group textarea {
+    height: 150px; /* Aumentar el tamaño del campo de texto */
+}
+
+.contacto button {
+    align-self: flex-start;
+}
+
+/* Estilos para la sección de mapa */
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa h2 {
+    margin-bottom: 20px;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    width: 1000px;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.embed-responsive-16by9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px; /* Aumentar el tamaño del mapa */
+    border: 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.embed-responsive-4by3 {
+    padding-bottom: 75%; /* 4:3 ratio */
+}
+
+/* Enlaces de interés */
+.enlaces-interes {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.relacionados {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.pagina-relacionada {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-relacionado:link {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.pagina-relacionada a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.pagina-relacionada a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes adicionales para la barra de navegación */
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important; /* Asegura que el texto de los enlaces sea blanco */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Ajusta el color del borde del toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.1); /* Ajusta el color del icono del toggler */
+}
+
+/*Información de Contacto*/
+
+.contact-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.contact-links a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden; /* Para asegurarse de que las imágenes se mantengan dentro del círculo */
+}
+
+.contact-links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área */
+}
